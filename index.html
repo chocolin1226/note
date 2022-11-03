@@ -1,14 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
     <title>Choco's book</title>
   </head>
   <body>
-    <h1>Choco's book</h1>
-    <h2>study notes</h2>
-    <a href="https://medium.com/@h9711022">My medium</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+      <div class="container">
+        <a class="navbar-brand" href="#">Choco's book</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li> -->
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div
+            id="bs-carousel"
+            class="carousel slide mb-3"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#bs-carousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#bs-carousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#bs-carousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://picsum.photos/1200/230?random=22"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://picsum.photos/1200/230?random=23"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://picsum.photos/1200/230?random=24"
+                  class="d-block w-100"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#bs-carousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#bs-carousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <!-- <li class="breadcrumb-item"><a href="#">gold fish</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                CSS select
+              </li> -->
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <div class="menu">
+            <div class="list-group">
+              <a
+                href="#"
+                class="list-group-item list-group-item-action active"
+                aria-current="true"
+              >
+                主頁
+              </a>
+              <!-- <a href="#" class="list-group-item list-group-item-action"
+                >A second link item</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >A third link item</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >A fourth link item</a
+              >
+              <a class="list-group-item list-group-item-action disabled"
+                >A disabled link item</a
+              > -->
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          <div class="row g-4">
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img
+                  src="https://picsum.photos/300/200?random=22"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Study notes</h3>
+                  <h4 class="card-subtitle">My medium</h4>
+                  <p class="card-text">It's my study notes.</p>
+                  <a href="https://medium.com/@h9711022" class="btn btn-primary"
+                    >My medium</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-12 col-md-4">
+              <div class="card">
+                <img
+                  src="https://picsum.photos/300/200?random=22"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Card title</h3>
+                  <h4 class="card-subtitle">Card subtitle</h4>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img
+                  src="https://picsum.photos/300/200?random=22"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Card title</h3>
+                  <h4 class="card-subtitle">Card subtitle</h4>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img
+                  src="https://picsum.photos/300/200?random=22"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Card title</h3>
+                  <h4 class="card-subtitle">Card subtitle</h4>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img
+                  src="https://picsum.photos/300/200?random=22"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Card title</h3>
+                  <h4 class="card-subtitle">Card subtitle</h4>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img
+                  src="https://picsum.photos/300/200?random=22"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Card title</h3>
+                  <h4 class="card-subtitle">Card subtitle</h4>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img
+                  src="https://picsum.photos/300/200?random=22"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Card title</h3>
+                  <h4 class="card-subtitle">Card subtitle</h4>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img
+                  src="https://picsum.photos/300/200?random=22"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Card title</h3>
+                  <h4 class="card-subtitle">Card subtitle</h4>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img
+                  src="https://picsum.photos/300/200?random=22"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Card title</h3>
+                  <h4 class="card-subtitle">Card subtitle</h4>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img
+                  src="https://picsum.photos/300/200?random=22"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Card title</h3>
+                  <h4 class="card-subtitle">Card subtitle</h4>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img
+                  src="https://picsum.photos/300/200?random=22"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Card title</h3>
+                  <h4 class="card-subtitle">Card subtitle</h4>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <div class="row mt-5">
+            <div class="col-12">
+              <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
